@@ -95,6 +95,6 @@ mv composer.phar /usr/local/bin/composer
 Happy Coding
 ----
 😃 
-[sdev.in]
+[sdev.in](https://sdev.in)
 
 
