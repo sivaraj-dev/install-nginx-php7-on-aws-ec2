@@ -1,4 +1,5 @@
 # Cheatsheet (Install nginx server + PHP 7 on AWS EC2 Linux)
+# Install PHP 7 on EC2 micro Instance running Amazon Linux Distribution
 
 ### Install linux update, followed by GCC and Make
 ```sh
@@ -12,10 +13,12 @@ sudo yum install -y yum-plugin-changelog
 sudo yum update --changelog
 ```
 
-### install php 7, php-fpm and related modules
+### Install PHP
+### List of PHP packages [https://webtatic.com/packages/php70/]
+### Install additional commonly used php packages
 ```sh
 sudo rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
-sudo yum install --enablerepo=webtatic-testing php70w php70w-devel php70w-fpm php70w-mysqlnd php70w-mbstring php70w-pdo php70w-mcrypt php70w-xml php70w-mbcrypt php70w-pear
+sudo yum install --enablerepo=webtatic-testing php70w php70w-devel php70w-fpm php70w-mysqlnd php70w-mbstring php70w-pdo php70w-mcrypt php70w-xml php70w-mbcrypt php70w-pear php70w-gd php70w-curl php70w-opcache php70w-pecl-apcu php70w-imap php70w-pecl-redis
 ```
 
 ### install nginx
@@ -89,6 +92,9 @@ chmod +x composer.phar
 mv composer.phar /usr/local/bin/composer
 ```
 
-
+Happy Coding
+----
+😃 
+[sdev.in]
 
 
