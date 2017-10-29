@@ -92,6 +92,14 @@ chmod +x composer.phar
 mv composer.phar /usr/local/bin/composer
 ```
 
+# Errors
+### 502 Bad Gateway NGINX or 502 Service Temporarily Overloaded
+![Filter by category](https://github.com/sivaraj-dev/install-nginx-php7-on-aws-ec2/raw/master/images/502-Bad-Gateway-error-001.jpg)
+
+Check the owner permission for php-fpm sock (`/var/run/php-fpm/php-fpm.sock`)
+`sudo chown -R nginx /var/run/php-fpm/php-fpm.sock`
+
+
 Happy Coding
 ----
 😃 
